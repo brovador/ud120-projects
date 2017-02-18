@@ -35,8 +35,8 @@ word_data = []
 ### temp_counter helps you only look at the first 200 emails in the list so you
 ### can iterate your modifications quicker
 
-word_data = pickle.load(open("your_word_data.pkl", "r"))
-from_data = pickle.load(open("your_email_authors.pkl", "r"))
+#word_data = pickle.load(open("your_word_data.pkl", "r"))
+#from_data = pickle.load(open("your_email_authors.pkl", "r"))
 
 if len(word_data) == 0 or len(from_data) == 0:
     for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
@@ -54,7 +54,7 @@ if len(word_data) == 0 or len(from_data) == 0:
 
             ### use str.replace() to remove any instances of the words
             ### ["sara", "shackleton", "chris", "germani"]
-            for x in ["sara", "shackleton", "chris", "germani"]:
+            for x in ["sara", "shackleton", "chris", "germani", "sshacklensf", "cgermannsf"]:
                 email_text = email_text.replace(x, '')
 
             ### append the text to word_data
